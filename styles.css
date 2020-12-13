@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;1,600&display=swap');
 :root {
-  --primary: #7c3aed;
+  --primary: #93c5fd;
   --gray: #f3f4f6;
   --dark-gray: #6b7280;
+  --dark-blue: #3b82f6;
 }
 
 body {
@@ -44,6 +45,11 @@ hr {
   padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
+.primary-link:hover {
+  color: var(--dark-blue);
+  border-radius: 20px;
+}
+
 .secondary-link {
   text-decoration: none;
   color: var(--primary);
@@ -52,6 +58,11 @@ hr {
   min-width: 140px;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.secondary-link:hover {
+  color: var(--dark-blue);
+  border-radius: 20px;
 }
 
 /** nav **/
@@ -63,12 +74,19 @@ hr {
 }
 
 .navigation .brand {
+  padding: 1rem;
   font-weight: bold;
 }
 
 .navigation ul {
+  padding: 0rem 1rem;
   list-style: none;
   text-align: right;
+}
+
+.navigation ul li a:hover {
+  color: blue;
+  border-radius: 5px;
 }
 
 .navigation li {
@@ -138,4 +156,15 @@ hr {
 
 .footer ul {
   padding-inline-start: 0px;
+}
+
+.footer .link {
+  font-weight: bold;
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+.footer ul li a:hover {
+  color: var(--dark-blue);
+  border-radius: 5px;
 }
